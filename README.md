@@ -4,7 +4,6 @@ This project demonstrates how to automate the process of filling out a Google Fo
 
 ### Install Dependencies
 
-Install the project dependencies using pip:
 
 ```bash
 pip install -r requirements.txt
