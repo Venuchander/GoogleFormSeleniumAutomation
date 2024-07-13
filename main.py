@@ -4,46 +4,46 @@ from selenium.webdriver.common.by import By
 
 
 web = webdriver.Chrome()
-web.get("Your Google Form link")
+web.get("https://docs.google.com/forms/d/e/1FAIpQLSdUCd3UWQ3VOgeg0ZzNeT-xzNawU8AJ7Xidml-w1vhfBcvBWQ/viewform")
 
 time.sleep(2)
 
 name = "Venuchander"
-first = web.find_element(By.XPATH,'xpath')
+first = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
 first.send_keys(name)
 time.sleep(1)
 
-c_number = "Ph.No"
-number = web.find_element(By.XPATH,'xpath')
+c_number = "8807789175"
+number = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input')
 number.send_keys(c_number)
 time.sleep(1)
 
-email = "yourname@gmail.com"
-mail = web.find_element(By.XPATH,'xpath')
+email = "venuchander1@gmail.com"
+mail = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div[1]/div/div[1]/input')
 mail.send_keys(email)
 
-address = "Address"
-add_address = web.find_element(By.XPATH,'xpath')
+address = "NO 37A, Velan Nagar 5th Street, Valasaravakkam, Chennai 87"
+add_address = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[1]/div[2]/textarea')
 add_address.send_keys(address)
 
-pincode = "000000"
-add_pincode = web.find_element(By.XPATH,'xpath')
+pincode = "600087"
+add_pincode = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div[1]/div/div[1]/input')
 add_pincode.send_keys(pincode)
 
 
-dob = "424325"
-add_dob = web.find_element(By.XPATH,'xpath')
+dob = "07032006"
+add_dob = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[6]/div/div/div[2]/div/div/div[2]/div[1]/div/div[1]/input')
 add_dob.send_keys(dob)
 
 gender = "Male"
-add_gender = web.find_element(By.XPATH,'xpath')
+add_gender = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[7]/div/div/div[2]/div/div[1]/div/div[1]/input')
 add_gender.send_keys(gender)
 
-verification_code = "Random Code"
-add_verification_code = web.find_element(By.XPATH,'xpath')
+verification_code = "GNFPYC"
+add_verification_code = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[8]/div/div/div[2]/div/div[1]/div/div[1]/input')
 add_verification_code.send_keys(verification_code)
 
-submit = web.find_element(By.XPATH,'xpath')
+submit = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span')
 submit.click()
 
 time.sleep(10)
