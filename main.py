@@ -4,11 +4,11 @@ from selenium.webdriver.common.by import By
 
 
 web = webdriver.Chrome()
-web.get("https://docs.google.com/forms/d/e/1FAIpQLSdUCd3UWQ3VOgeg0ZzNeT-xzNawU8AJ7Xidml-w1vhfBcvBWQ/viewform")
+web.get("Google Form Link")
 
 time.sleep(2)
 
-name = "Venuchander"
+name = "Name"
 first = web.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
 first.send_keys(name)
 time.sleep(1)
